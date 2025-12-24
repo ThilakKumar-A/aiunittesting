@@ -1,36 +1,47 @@
-AI Unit Testing for Angular using Private LLM (Qwen-0.5-Coder)
+###AI Unit Testing for Angular using Private LLM (Qwen-0.5-Coder)
+Overview
 
-This repository presents an AI-driven unit testing system for Angular applications using a privately hosted Large Language Model (LLM) based on Qwen-0.5-Coder (0.5B). The model is fine-tuned on custom Angular source code and unit test datasets to automatically generate and enhance Jasmine/Karma test cases.
+This project provides an AI-powered unit testing framework for Angular applications using a privately hosted Large Language Model (LLM) based on Qwen-0.5-Coder (0.5B). The model is fine-tuned on custom Angular source code and corresponding unit test datasets to automatically generate high-quality Jasmine/Karma test cases.
 
-The solution is designed for secure, offline, and enterprise environments where source code privacy is critical. All model inference and fine-tuning are performed locally or within a private infrastructure, eliminating the need for external cloud-based LLM APIs.
+The system is designed for secure, offline, and enterprise environments where source code confidentiality is a priority. All inference and fine-tuning operations are performed locally or within private infrastructure, with no dependency on external cloud-based AI services.
 
-Features
+Key Features
 
-Private LLM-based unit test generation for Angular applications
+Automated unit test generation for Angular applications
 
-Fine-tuned Qwen-0.5-Coder model for improved Angular test accuracy
+Private LLM deployment using Qwen-0.5-Coder
 
-Automatic generation of Jasmine/Karma test files
+Fine-tuned model trained on Angular-specific code and tests
 
-Support for Angular components, services, pipes, and guards
+Generates Jasmine/Karma-compatible test files
 
-Secure, offline execution with no data leakage
+Supports components, services, pipes, and guards
 
-Easily extensible architecture for CI/CD integration
+Offline and secure execution
 
-Architecture Overview
+CI/CD-friendly and extensible architecture
 
-The system analyzes Angular source files and extracts relevant context, which is then passed to the fine-tuned Qwen-0.5-Coder model. The model generates unit test cases, including mocks and edge cases, following Angular testing best practices. Generated tests are validated and formatted to ensure compatibility with Angular’s testing framework.
+Architecture
 
-Model Details
+Angular source files are parsed and preprocessed
 
-Base Model: Qwen-0.5-Coder
+Relevant code context is extracted and structured
 
-Fine-Tuning Method: Supervised fine-tuning using custom datasets
+Context is passed to the fine-tuned Qwen-0.5-Coder model
 
-Training Data: Angular code and corresponding unit test pairs
+Unit test files are generated following Angular testing best practices
 
-Deployment: Local machine or private cloud environment
+Tests are validated and formatted for execution
+
+Model Information
+
+Base Model: Qwen-0.5-Coder (0.5B parameters)
+
+Fine-Tuning Approach: Supervised fine-tuning (SFT)
+
+Training Data: Angular code and corresponding Jasmine/Karma tests
+
+Inference Mode: Local or private cloud deployment
 
 Technology Stack
 
@@ -38,7 +49,9 @@ Angular
 
 TypeScript
 
-Jasmine / Karma
+Jasmine
+
+Karma
 
 Python
 
@@ -46,12 +59,13 @@ Hugging Face Transformers
 
 Qwen-0.5-Coder
 
-Use Cases
+Setup Instructions
+Prerequisites
 
-Enterprise Angular applications
+Node.js (v16 or later)
 
-Secure development environments
+Python (v3.9 or later)
 
-Automated unit test generation and maintenance
+Angular CLI
 
-Teams requiring private AI tooling
+Git
